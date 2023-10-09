@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>332</width>
+    <height>742</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>283</width>
+    <height>695</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Escada</string>
+  </property>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>311</width>
+     <height>115</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="1" column="1">
+     <widget class="QComboBox" name="TipoEscada">
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string notr="true">Escada reta</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="modelColumn">
+       <number>0</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Escada reta</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Escada L</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Escada U</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Escada espiral</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Patamar : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="Patamar">
+      <item>
+       <property name="text">
+        <string>Não</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sim</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Tipo de degrau : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="TipoDegrau">
+      <item>
+       <property name="text">
+        <string>Comum fechada</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Comum aberta</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vazada</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Plissada</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Tipo de escada : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Design</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>321</width>
+     <height>243</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <italic>false</italic>
+       </font>
+      </property>
+      <property name="text">
+       <string>Dimensões</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Altura : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QSpinBox" name="Altura">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <number>99999999</number>
+      </property>
+      <property name="value">
+       <number>300</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Largura:  </string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="Largura">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <number>99999999</number>
+      </property>
+      <property name="value">
+       <number>90</number>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_11">
+      <property name="text">
+       <string>Nº de degraus : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="NDegraus">
+      <property name="maximum">
+       <number>99999999</number>
+      </property>
+      <property name="value">
+       <number>18</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_16">
+      <property name="text">
+       <string>Espessura do Degrau :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QSpinBox" name="EspecuraDegrau">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <number>99999999</number>
+      </property>
+      <property name="value">
+       <number>7</number>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_17">
+      <property name="text">
+       <string>Espaço entre lances :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QDoubleSpinBox" name="DistLances">
+      <property name="prefix">
+       <string/>
+      </property>
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <double>100000000000000000000.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>10.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_19">
+      <property name="text">
+       <string>Diâmetro Espiral:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QDoubleSpinBox" name="DiametroEspiral">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <double>999999999999999.000000000000000</double>
+      </property>
+      <property name="value">
+       <double>100.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_20">
+      <property name="text">
+       <string>Largura Patamar :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QDoubleSpinBox" name="LarguraPatamar">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <double>9999999999999.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>150</y>
+     <width>311</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_3">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Estrutura</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="TipoLongarina">
+      <item>
+       <property name="text">
+        <string>Nenhum</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Central</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Borda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lateral</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="EspecuraEstrutura">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <number>99999999</number>
+      </property>
+      <property name="value">
+       <number>15</number>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_10">
+      <property name="text">
+       <string>Tipo de longarina : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_14">
+      <property name="text">
+       <string>Espessura da estrutura :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_15">
+      <property name="text">
+       <string>Largura longarina :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QSpinBox" name="LarguraLongarina">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <number>99999999</number>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_18">
+      <property name="text">
+       <string>Mastro:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="Mastro">
+      <item>
+       <property name="text">
+        <string>Não</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sim</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>7</x>
+     <y>130</y>
+     <width>311</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>311</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>570</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Calcular</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>311</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout_4">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_12">
+      <property name="text">
+       <string>Espelho  :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_13">
+      <property name="text">
+       <string>Piso : </string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QDoubleSpinBox" name="Espelho">
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <double>999999999999999.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="Piso">
+      <property name="prefix">
+       <string/>
+      </property>
+      <property name="suffix">
+       <string> cm</string>
+      </property>
+      <property name="maximum">
+       <double>999999999999999.000000000000000</double>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
